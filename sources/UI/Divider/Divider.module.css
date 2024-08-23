@@ -1,0 +1,21 @@
+.textDivider {
+    display: flex;
+    align-items: center;
+    --textDivider-gap: 1rem;
+}
+
+.textDivider::before,
+.textDivider::after {
+    content: '';
+    height: 0.5px;
+    background-color: rgb(87, 87, 87);
+    flex-grow: 1;
+}
+
+.textDivider::before {
+    margin-right: var(--textDivider-gap);
+}
+
+.textDivider::after {
+    margin-left: var(--textDivider-gap);
+}
